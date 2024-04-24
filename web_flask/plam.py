@@ -44,8 +44,8 @@ def number(n):
 
 # Define a route for /number_template/<n>
 @app.route('/number_template/<int:n>', strict_slashes=False)
-def numberandtemplates(n):
-    return render_template('5-number.html', n=n)
+def number_templates(n):
+    return render_template('number_template.html', number=n)
 
 
 # Run the Flask application
